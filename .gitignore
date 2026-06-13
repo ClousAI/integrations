@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Node / TypeScript
+node_modules/
+dist/
+*.tsbuildinfo
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Secrets
+.env.local
+*.key
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

@@ -1,0 +1,22 @@
+{
+  "name": "@clous/vercel-ai-tools",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Clous SEC data tools for the Vercel AI SDK",
+  "type": "module",
+  "main": "src/clous-tools.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "example": "tsx src/example.ts"
+  },
+  "dependencies": {
+    "ai": "^3.4.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@ai-sdk/openai": "^0.0.66",
+    "@types/node": "^20.14.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.0"
+  }
+}
