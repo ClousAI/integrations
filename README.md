@@ -63,7 +63,7 @@ If you don't want to wire up individual tools, two paths need almost no glue:
       "content": "What did NVIDIA report in its latest 8-K?"}])
   ```
 
-- **MCP server.** Use the official Clous MCP server (`@clous/mcp`) to expose all
+- **MCP server.** Use the official Clous MCP server (`@clousai/mcp`) to expose all
   49 Clous tools to any MCP-compatible client (Claude, Cursor, etc.) with no
   code. See [github.com/clousai/mcp](https://github.com/clousai/mcp).
 

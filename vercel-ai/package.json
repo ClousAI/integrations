@@ -1,5 +1,5 @@
 {
-  "name": "@clous/vercel-ai-tools",
+  "name": "@clousai/vercel-ai-tools",
   "version": "0.1.0",
   "private": true,
   "description": "Clous SEC data tools for the Vercel AI SDK",
