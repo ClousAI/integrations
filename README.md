@@ -1,12 +1,25 @@
+<div align="center">
+
 # Clous framework integrations
 
-Drop-in tool definitions that give your AI agents access to **entity-resolved SEC
-filing data** from the [Clous API](https://clous.ai) — in about two lines.
+**Drop-in tool definitions that give your AI agents public data intelligence — in about two lines.**
+
+Entity-resolved SEC filing data from the [Clous API](https://clous.ai), wrapped for the major agent frameworks.
+
+[![Docs](https://img.shields.io/badge/docs-clous.ai-blue)](https://docs.clous.ai)
+[![Built for AI agents](https://img.shields.io/badge/built%20for-AI%20agents-6e56cf)](https://clous.ai)
+[![License: MIT](https://img.shields.io/badge/license-MIT-black)](./LICENSE)
+
+[clous.ai](https://clous.ai) · [docs.clous.ai](https://docs.clous.ai)
+
+</div>
+
+---
 
 Each folder is independently usable: copy it into your project, set
 `CLOUS_API_KEY`, and import. Every framework wraps the same ~11 core Clous
 endpoints and shares a tiny per-language HTTP helper (`_clous.py` / `_clous.ts`)
-so the wire logic stays DRY.
+so the wire logic stays DRY. **SEC/EDGAR is live today; Clous is expanding across public data.**
 
 | Framework | Language | Folder | What you get |
 |-----------|----------|--------|--------------|
@@ -38,8 +51,8 @@ N-PORT fund holdings, and more) — see the [API docs](https://docs.clous.ai).
 
 ## Getting started
 
-1. Grab an API key at [clous.ai](https://clous.ai).
-2. `export CLOUS_API_KEY=sk_...`
+1. Grab a free API key at [clous.ai](https://clous.ai) (100 credits, no card).
+2. `export CLOUS_API_KEY=clous_live_...`
 3. Open the folder for your framework and follow its README (each has a 2-line
    integration snippet + a runnable `example`).
 
@@ -65,7 +78,22 @@ If you don't want to wire up individual tools, two paths need almost no glue:
 
 - **MCP server.** Use the official Clous MCP server (`@clousai/mcp`) to expose all
   49 Clous tools to any MCP-compatible client (Claude, Cursor, etc.) with no
-  code. See [github.com/clousai/mcp](https://github.com/clousai/mcp).
+  code. See [`Mcp`](https://github.com/ClousAI/Mcp).
+
+## Part of the Clous platform
+
+Clous is **public data intelligence for AI agents** — entity-resolved signals from public records and the web, monitored in real time, delivered with citations. SEC/EDGAR is live today; expanding across public data.
+
+| | |
+| --- | --- |
+| **Website** | [clous.ai](https://clous.ai) |
+| **Docs** | [docs.clous.ai](https://docs.clous.ai) · [`llms.txt`](https://docs.clous.ai/llms.txt) |
+| **Framework tools** | [`integrations`](https://github.com/ClousAI/integrations) ← you are here |
+| **SDKs** | [`clous-python`](https://github.com/ClousAI/clous-python) · [`clous-js`](https://github.com/ClousAI/clous-js) |
+| **MCP server** | [`Mcp`](https://github.com/ClousAI/Mcp) · hosted at [mcp.clous.ai](https://mcp.clous.ai) |
+| **Claude Code plugin** | [`claude-code-plugin`](https://github.com/ClousAI/claude-code-plugin) |
+| **Agent Skill** | [`skill`](https://github.com/ClousAI/skill) |
+| **Recipes** | [`cookbook`](https://github.com/ClousAI/cookbook) |
 
 ## License
 
